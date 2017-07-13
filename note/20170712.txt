@@ -1,0 +1,16 @@
+# 1.用pip安装Python的第三方类库，很方便 #
+
+----------
+
+# 2.urllib 和urllib2之间的区别 #
+1. 在python中，urllib和urllib2不可相互替代的。
+2. 整体来说，urllib2是urllib的增强，但是urllib中有urllib2中所没有的函数。
+3. urllib2可以用urllib2.openurl中设置Request参数，来修改Header头。如果你访问一个网站，想更改User Agent（可以伪装你的浏览器），你就要用urllib2.
+4. urllib支持设置编码的函数，urllib.urlencode,在模拟登陆的时候，经常要post编码之后的参数，所以要想不使用第三方库完成模拟登录，你就需要使用urllib。
+5. urllib一般和urllib2一起搭配使用。
+# MarkDown激活Soar360@live.com
+GBPduHjWfJU1mZqcPM3BikjYKF6xKhlKIys3i1MU2eJHqWGImDHzWdD6xhMNLGVpbP2M5SN6bnxn2kSE8qHqNY5QaaRxmO3YSMHxlv2EYpjdwLcPwfeTG7kUdnhKE0vVy4RidP6Y2wZ0q74f47fzsZo45JE2hfQBFi2O9Jldjp1mW8HUpTtLA2a5/sQytXJUQl/QKO0jUQY4pa5CCx20sV1ClOTZtAGngSOJtIOFXK599sBr5aIEFyH0K7H4BoNMiiDMnxt1rD8Vb/ikJdhGMMQr0R4B+L3nWU97eaVPTRKfWGDE8/eAgKzpGwrQQoDh+nzX1xoVQ8NAuH+s4UcSeQ== 
+# Unicode转汉字输出 #
+print ('\u57fa\u7840\u5316'.decode('unicode-escape'))
+
+	
