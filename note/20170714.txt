@@ -1,0 +1,34 @@
+# 安装lxml #
+- 使用pip直接安装baoc
+- 搜索后知乎上有如下方法
+    
+>1.安装wheel，命令行运行：
+>
+>pip install wheel
+> 
+>2.在这里下载对应的.whl文件，注意别改文件名！
+>
+>  http://www.lfd.uci.edu/~gohlke/pythonlibs/#lxml
+>  
+>3.进入.whl所在的文件夹，执行命令即可完成安装
+>
+>  
+>  pip install 带后缀的完整文件名
+
+
+ 	
+	
+
+		作者：深海鱼
+		链接：https://www.zhihu.com/question/30047496/answer/69754268
+		来源：知乎
+		著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+
+# html.parser & lxml #
+在BeautifulSoup中使用自带的html.parser解析器时，解析出来的soup有问题，部分内容被放到了html标签之外，换lxml之后，ok。
+
+# 标签内容是：下一页&gt; #
+死活匹配不到
+
+
+# 写一个单独的urlManager来管理相关url，避免在主循环里进行复杂的逻辑判断决定自己是否break，昨天模仿的doubanTop250是个反例 #
