@@ -1,0 +1,23 @@
+# 往数据库里插入中文时出现异常:#
+UnicodeEncodeError: 'latin-1' codec can't encode characters
+就是编码的问题,pymysql默认的编码是latin1,我们只需要把它改成utf8就好了.
+方法:
+打开Python的安装目录:Python34\Lib\site-packages\PyMySQL-0.7.9-py3.4.egg\pymysql用记事本打开connections.py文件,找到里面的DEFAULT_CHARSET,后面默认='latin1',改成utf8就好了,注意是utf8不是utf-8
+
+# pymysql默认字符集的修改 #
+ C:\Python27\Lib\site-packages\pymysqlconnections.py
+DEFAULT_CHARSET = 'utf8'
+
+# mysql主键设置成自增长 #
+ 效果类似于oracle的序列
+
+# 调bug #
+在爬取大众点评网香港酒店信息，将price转成int时，出现 invalid literal for int() with base 10: ''的异常。但debug模式下显示转换正确。后经过打印，发现前两个酒店的价格信息转换正常，到第三个报错。
+tip：在checkpoing点设置在循环里时，要多走几个循环看看
+
+
+# 提示Column count doesn't match value count at row 1错误 #
+由于写的SQL语句里列的数目和后面的值的数目不一致，(⊙﹏⊙)b
+
+# 截取数字 #
+        shopId = int(re.sub(r'\D', "", url))
