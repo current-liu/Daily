@@ -2,8 +2,9 @@ git push -u origin master
 git remote add origin https://git.oschina.net/liuchao1920/pythonproject.git
 
 
-spring json date
+#spring json date
 http://www.cnblogs.com/woshimrf/p/5189435.html
+#JSON跨域请求
 http://www.cnblogs.com/xmaomao/p/3360989.html
 
 http://www.jb51.net/article/48827.htm
