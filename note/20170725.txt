@@ -1,0 +1,43 @@
+# unicode == str #
+从beautifulsoup标签里读取的内容有些是unicode，与str无法直接比较。用获得的值做key进行字典的相关操作时，也需要先转成str。
+可：	
+
+	u"好" == obj 
+
+	"好" == obj.encode("utf-8")
+
+# beautifulsoup.find_all() #
+	搜索限制
+	限制搜索数量为2
+	soup.find_all("a", limit=2)
+
+	只搜索直接子节点
+	soup.html.find_all("a", recursive=False)
+	搜索限制结束
+
+# 打印完整堆栈信息 
+	import traceback
+
+	try:
+	        1/0
+	except Exception, e:
+	        exstr = traceback.format_exc()
+	        print exstr
+
+# Incorrect string value: '\xF0\x9F\x98\x84\xF0\x9F
+错误原因：
+我们可以看到错误提示中的字符0xF0 0x9F 0x98 0x84 ，这对应UTF-8编码格式中的4字节编码（UTF-8编码规范）。正常的汉字一般不会超过3个字节，为什么为出现4个字节呢？实际上是它对应的是智能手机输入法中的表情。那为什么会报错呢？因为mysql中的utf-8并不是真正意义上的utf-8，它只能存储1~3个字节长度的utf-8编码，如果想存储4个字节的必须用utf8mb4类型。不而要使用utf8mb4类型，首先要保证Mysql版本要不低于 MySQL 5.5.3。
+
+解决方案：
+
+1）使用utf8mb4数据类型
+
+   要用这种策略，如果MySql版本低于5.5.3，首先要进行版本升级，然后将对应的数据类型改为utf8mb4类型。如果使用的是Connector/J 连接数据库，需要在配置中把编码格式改为utf8mb4（set character_set_server=utf8mb4 in the connection config）。
+
+	http://blog.csdn.net/ahuyangdong/article/details/50739549
+	http://blog.csdn.net/fuxuejun/article/details/20361669
+
+# 评论内容里有引号的话，sql会出错 #
+
+# 在for li in comment_list:
+出现异常的话，或半部分的内容不执行，后面return的数据部分会是上一条的，需处理
