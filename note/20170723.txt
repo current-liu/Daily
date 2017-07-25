@@ -1,0 +1,40 @@
+# No tests were found 
+最后发现，书上说除了测试类外，要使用
+
+unittest.main() 
+来让python运行这个文件夹中的测试。而在PyCharm中，如果这样写就会出现上述问题。当把这条改成
+
+unittest.main
+
+也就是去掉括号后，测试会正常运行。
+
+# Creating Tests #
+PyCharm suggests a way to create tests for classes and individual methods.
+
+To create a test for a class or method, follow these general steps
+
+In the editor, place the caret at the class declaration, or somewhere within a method. 
+
+Do one of the following: 
+
+On the main menu, choose Navigate | Test. 
+
+On the context menu, choose Go To | Test. 
+
+PyCharm shows the list of available tests. 
+
+If the desired test doesn’t yet exist, click Create new test. 
+
+The Create Test dialog box opens. 
+
+In the Create Test dialog box, specify the following settings: 
+
+Target directory, where the new test class will be generated. 
+
+The name of the test file, and the name of the test class. 
+
+Select the check boxes next to the methods you want to include in the test class. 
+
+Note that if the caret has been placed within a method, only this method name is included in the list. 
+
+Click OK when ready. PyCharm generates the test file in the specified location. 
