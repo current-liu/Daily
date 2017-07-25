@@ -41,3 +41,14 @@
 
 # 在for li in comment_list:
 出现异常的话，或半部分的内容不执行，后面return的数据部分会是上一条的，需处理
+
+# pip insatll Proxies 失败
+使用 pip2.7 install Proxies 成功
+
+# pip2.7 install cookies 成功
+
+# 防止scrapy被ban
+	http://www.cnblogs.com/rwxwsblog/p/4575894.html
+
+# 安装python爬虫scrapy踩过的那些坑和编程外的思考
+	http://www.cnblogs.com/rwxwsblog/p/4557123.html	
