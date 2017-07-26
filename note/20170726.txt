@@ -1,0 +1,14 @@
+# python中list作为全局变量无需global声明的原因
+
+	http://www.cnblogs.com/yym2013/p/5915980.html
+
+# Unicode和Python的中文处理
+	http://www.cnblogs.com/TsengYuen/archive/2012/05/22/2513290.html
+
+# 昨天sql注入的问题
+尝试使用往cursor.execute()传入参数的方法，貌似又遇到了一堆字符编码的问题。
+暂时先将文本内容里的引号先替换掉。
+
+	待后续解决
+
+# mysql查询结果默认为tuple，有时需要转换

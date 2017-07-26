@@ -12,3 +12,6 @@ git remote add origin https://git.oschina.net/liuchao1920/pythonproject.git
 3.按键盘左上角"Esc"
 
 4.输入":wq",注意是冒号+wq,按回车键即可
+
+# 改为ssh
+	http://blog.csdn.net/yywan1314520/article/details/51566924
