@@ -11,4 +11,56 @@
 
 	待后续解决
 
-# mysql查询结果默认为tuple，有时需要转换
+# mysql查询结果默认为tuple
+	有时需要转换成list或者set
+
+# 这篇文章主要讨论使用Scrapy框架时，如何应对普通的反爬机制。
+	https://www.ctolib.com/topics-115162.html
+## header检验 ##
+最简单的反爬机制，就是检查HTTP请求的Headers信息，包括User-Agent, Referer、Cookies等。
+
+User-Agent
+
+User-Agent是检查用户所用客户端的种类和版本，在Scrapy中，通常是在下载器中间件中进行处理。比如在setting.py中建立一个包含很多浏览器User-Agent的列表，然后新建一个random_user_agent文件：
+
+	class RandomUserAgentMiddleware(object):
+    @classmethod
+    defprocess_request(cls, request, spider):
+        ua = random.choice(spider.settings['USER_AGENT_LIST'])
+        if ua:
+            request.headers.setdefault('User-Agent', ua)
+	
+## Referer
+Referer是检查此请求由哪里来，通常可以做图片的盗链判断。在Scrapy中，如果某个页面url是通过之前爬取的页面提取到，Scrapy会自动把之前爬取的页面url作为Referfer。也可以通过上面的方式自己定义Referfer字段。
+## Cookies
+网站可能会检测Cookie中session_id的使用次数，如果超过限制，就触发反爬策略。所以可以在Scrapy中设置 COOKIES_ENABLED = False 让请求不带Cookies。
+
+也有网站强制开启Cookis，这时就要麻烦一点了。可以另写一个简单的爬虫，定时向目标网站发送不带Cookies的请求，提取响应中Set-cookie字段信息并保存。爬取网页时，把存储起来的Cookies带入Headers中。
+## X-Forwarded-For
+在请求头中添加X-Forwarded-For字段，将自己申明为一个透明的代理服务器，一些网站对代理服务器会手软一些。
+
+X-Forwarded-For头一般格式如下
+	X-Forwarded-For: client1, proxy1, proxy2
+这里将client1，proxy1设置为随机IP地址，把自己的请求伪装成代理的随机IP产生的请求。然而由于X-Forwarded-For可以随意篡改，很多网站并不会信任这个值。
+## 限制IP的请求数量
+如果某一IP的请求速度过快，就触发反爬机制。当然可以通过放慢爬取速度绕过，这要以爬取时间大大增长为代价。另一种方法就是添加代理。
+
+很简单，在下载器中间件中添加:
+	request.meta['proxy'] = 'http://' + 'proxy_host' +  ':' + proxy_port
+
+#Python生成器是什么
+Python 中有一种函数，用关键字 yield 来返回值，这种函数叫生成器函数，函数被调用时会返回一个生成器对象，生成器本质上还是一个迭代器，也是用在迭代操作中
+	http://www.pythontab.com/html/2017/pythonhexinbiancheng_0523/1144.html
+	http://www.pythontab.com/html/2016/pythonhexinbiancheng_0724/1054.html
+#Python爬虫使用代理proxy抓取网页
+	http://www.pythontab.com/html/2016/pythonhexinbiancheng_1101/1087.html
+#深入理解python之self
+self只有在类的方法中才会有，也必须有；
+
+独立的函数或方法是不必带有self的；
+
+self指的是类实例对象本身(注意：不是类本身)
+
+http://www.pythontab.com/html/pythonhexinbiancheng/6.html
+http://www.pythontab.com/html/2015/pythonhexinbiancheng_1120/987.htmlhttp://www.pythontab.com/html/2016/pythonhexinbiancheng_0706/1036.html
+http://www.pythontab.com/html/2016/pythonhexinbiancheng_0718/1044.html
