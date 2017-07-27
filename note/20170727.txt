@@ -1,0 +1,9 @@
+## AttributeError: 'module' object has no attribute
+文件名冲突了，比如html_parser,不知道和啥冲突了，改成h_parser就好了啊啊啊
+
+##自己给自己挖坑
+在 dianping_hotel_hk 的 new_review_urls
+
+https://www.tianyancha.com/search?key=%E6%96%B9%E5%BE%97&checkFrom=searchBox
+
+https://www.tianyancha.com/search?key=方得&checkFrom=searchBox
