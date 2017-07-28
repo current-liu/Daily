@@ -14,3 +14,28 @@ ip池的维护也需要考虑很多，稍后要单独写一个模块
 
 ## 大众点评酒店项目大改动
 数据在内存--部分放在数据库--充分考虑程序随时可能中断的各种可能性，做好相应的异常处理，以保证能以合理的方式继续运行，相关数据及时保存到数据库，在相应的时机从数据库重新载入相关数据。
+
+## unittest
+当项目复杂度逐渐提升之后，设计单元测试的重要性就愈发地突显出来。特别是Python不声明参数变量类型的特点，很容易导致错误。比如一开始传入一个函数的参数是str，后来又传入tuple时会报错，如果在函数里对传入的参数取其中的元素，暂时是可以的。但当其他地方调用这个函数，又传入str时，程序就会异常。所以，要给函数写注释和docstring，标明应传入的参数类型。
+
+## 程序架构
+尝试模仿mvc的思想，是程序的结构更清晰合理
+
+----------
+# night study
+
+##IO
+	try:
+		f = open(r'c:\p.txt','r')
+		print
+	finnally:
+		if:
+			f.close()
+	可简写为：
+	with open（r'c:\p.txt','r') as f:
+		print f.read()
+##
+##数据挖掘系列（1）关联规则挖掘基本概念与Aprior算法
+	http://www.cnblogs.com/fengfenggirl/p/associate_apriori.html
+## python 模板
+https://my.oschina.net/u/2351685/blog/608837?p={{totalPage}}
