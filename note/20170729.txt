@@ -1,0 +1,18 @@
+##Python自动导包
+Auto Import
+
+#Ctrl+Alt+Enter
+	Shift+F9               debug
+	Shift+F10             	run
+	Alt+Shift+F9        	选择你想run的程序
+	Alt+Shift+F10      		选择你想debug的程序
+
+#debug的时候
+可以在断点打开Python console然后改变量值。。。
+
+##针对python类来创建模板并使用
+	http://blog.csdn.net/u013088062/article/details/50262567
+
+##Pycharm教程介绍
+如果通过Pycharm使用本地Git集
+	http://blog.csdn.net/u013088062/article/details/50350520

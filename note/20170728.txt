@@ -39,3 +39,13 @@ ip池的维护也需要考虑很多，稍后要单独写一个模块
 	http://www.cnblogs.com/fengfenggirl/p/associate_apriori.html
 ## python 模板
 https://my.oschina.net/u/2351685/blog/608837?p={{totalPage}}
+
+### coding:utf-8 & sys.getdefaultencoding()
+1. # coding:utf-8
+作用是定义源代码的编码. 如果没有定义, 此源码中是不可以包含中文字符串的.
+PEP 0263 -- Defining Python Source Code Encodings
+https://www.python.org/dev/peps/pep-0263/
+2. sys.getdefaultencoding()
+是设置默认的string的编码格式
+即unicode.encode（）时调用的编码格式，系统默认ascii，中文的直接.encode（）会报错
+没有sys.getdefaultencoding()的话，就要在.encode("utf8")
