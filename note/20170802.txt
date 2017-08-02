@@ -1,0 +1,28 @@
+#出现一个错误
+<h2>The requested URL could not be retrieved</h2>
+</div>
+<hr>
+
+<div id="content">
+<p>The following error was encountered while trying to retrieve the URL: <a href="http://www.dianping.com/shop/2659744/review_more?">http://www.dianping.com/shop/2659744/review_more?</a></p>
+
+<blockquote id="error">
+<p><b>Unable to determine IP address from host name <q>www.dianping.com</q></b></p>
+</blockquote>
+
+<p>The DNS server returned:</p>
+<blockquote id="data">
+<pre>Refused: The name server refuses to perform the specified operation.</pre>
+</blockquote>
+
+<p>This means that the cache was not able to resolve the hostname presented in the URL. Check if the address is correct.</p>
+
+这应该就是使用代理后，某些网页解析后报找不到下一页的原因。并非之前猜测的lxml的原因。
+
+<pre>暂未找到解决办法</pre>
+
+
+##修改一个函数的参数或返回值是，要查看调用关系
+如果一个函数返回两个值，调用时只用一个值接，就会自动打包成tuple
+
+##不要起一样的变量名，哪怕是在不同的函数里的局部变量
