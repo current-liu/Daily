@@ -1,0 +1,28 @@
+## 完善了ip_roxy模块
+对外提供两个方法get_ip() remove_ip(),具体功能均封装在内部。
+
+tip：全局变量和局部变量分开使用，ip_pool引入之前，全局变量是IP_list，又直接在download_ips() 用了+=，又在get_ip（）里作为全局变量使用，好像会出问题。
+
+## Bug
+download第1次 http://www.dianping.com/shop/4567229
+Traceback (most recent call last):
+  File "D:/Liuchao/PycharmProjects/pythonproject/spider/dianping_hotel_hk/main.py", line 519, in <module>
+    crawling_shop()
+  File "D:/Liuchao/PycharmProjects/pythonproject/spider/dianping_hotel_hk/main.py", line 109, in crawling_shop
+    addr, tel, openTime, checkTime, facs, room_facs, services, info, review_num = h_parser.shopParser(doc)
+TypeError: 'NoneType' object is not iterable
+'NoneType' object has no attribute 'find'
+
+再次debug该地址 未出现bug
+
+小循环循环到:
+http://www.dianping.com/shop/2576827/review_more_newest?pageno=94
+download第1次 http://www.dianping.com/shop/2576827/review_more_newest?pageno=94
+(1062, u"Duplicate entry '75308271' for key 'PRIMARY'")
+shopId 2576827 已循环到已经爬过内容
+shopId 2576827 complete to pageno=94
+
+前面的93页漏掉了
+
+迪士尼 前面1455
+
