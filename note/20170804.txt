@@ -1,6 +1,8 @@
 ## 完善了ip_roxy模块
 对外提供两个方法get_ip() remove_ip(),具体功能均封装在内部。
-
+## 完善html_download模块
+将request请求结果的处理封装在html——download模块内，对下载过程报异常、下载下来的页面包含
+403 Forbidden、EEEOR等情况进行处理，保证程序的健壮性。
 tip：全局变量和局部变量分开使用，ip_pool引入之前，全局变量是IP_list，又直接在download_ips() 用了+=，又在get_ip（）里作为全局变量使用，好像会出问题。
 
 ## Bug
