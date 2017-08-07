@@ -1,0 +1,69 @@
+小循环循环到:
+http://www.dianping.com/shop/2564851/review_more_newest?pageno=1381
+download第1次 http://www.dianping.com/shop/2564851/review_more_newest?pageno=1381
+正在获取代理ip，请稍后
+download第2次 http://www.dianping.com/shop/2564851/review_more_newest?pageno=1381
+(1062, u"Duplicate entry '166995768' for key 'PRIMARY'")
+INSERT INTO hotel_review (reviewId,memberId,shopId,reviewStar,room,location,service,health,
+                      facilities,content,creatTime,likes,reply)
+                      values('166995751','32034407','2564851','5','4','4','4','-1','-1','我们带孩子去迪斯尼乐园就会住在好莱坞酒店，孩子们非常喜欢这里的卡通风格，所有设施都有迪士尼卡通图案装饰，电视一直播放的动画片，窗外美丽的园林景观。一层迪士尼商品售卖商店都非常招孩子喜欢。','2015-08-04 00:00:00','-1','-1')
+INSERT INTO hotel_review (reviewId,memberId,shopId,reviewStar,room,location,service,health,
+                      facilities,content,creatTime,likes,reply)
+                      values('166995722','805324009','2564851','5','4','4','4','-1','-1','特别棒不管是从里面还是外面都是梦幻般的存在，我和朋友们都特别喜欢，设施什么的也特别帮，3000多的钱能住的这么好，也算是物有所值了呢，大家有空的也可以来住，这外面就可以看到梦幻王国迪士尼乐园。。。。。。','2015-08-04 00:00:00','-1','-1')
+INSERT INTO hotel_review (reviewId,memberId,shopId,reviewStar,room,location,service,health,
+                      facilities,content,creatTime,likes,reply)
+                      values('166995215','51523191','2564851','5','4','4','4','-1','-1','交通非常非常便利，服务水平很高，有宾至如归，回家的感觉，配套设施非常齐全，住在里面完全没有后顾之忧，无论旅游还是出差选择这家酒店肯定是最合适不过，下次还会选择的，推荐个每一个认识的朋友。尤其是他家的床真的非常舒服','2015-08-04 00:00:00','-1','-1')
+INSERT INTO hotel_review (reviewId,memberId,shopId,reviewStar,room,location,service,health,
+                      facilities,content,creatTime,likes,reply)
+                      values('166994659','78479271','2564851','5','4','4','4','-1','-1','位于香港优越的地理位置，交通便利客流量大，人来人往，在酒店里还可以欣赏外面优美的风光，酒店里的设施十分的新潮好看，软硬件性价比高，很值得再去光顾。在酒店里还可以感受到香港的独特魅力，体会多重不同的文化。','2015-08-04 00:00:00','-1','-1')
+INSERT INTO hotel_review (reviewId,memberId,shopId,reviewStar,room,location,service,health,
+                      facilities,content,creatTime,likes,reply)
+                      values('166994610','770028075','2564851','5','4','4','4','-1','-1','没办法，香港就是繁华，很好！，环境好，服务态度好，什么都好，','2015-08-04 00:00:00','-1','-1')
+INSERT INTO hotel_review (reviewId,memberId,shopId,reviewStar,room,location,service,health,
+                      facilities,content,creatTime,likes,reply)
+                      values('166994477','130015289','2564851','5','3','2','2','-1','-1','还可以不错的，之前去了几次。山水风景都很不错的。大家去了呀看一下还可以不错的，之前去了几次。山水风景都很不错的。大家去了呀看一下还可以不错的，之前去了几次。山水风景都很不错的。大家去了呀看一下还可以不错的，之前去了几次。山水风景都很不错的。大家去了呀看一下','2015-08-04 00:00:00','-1','-1')
+INSERT INTO hotel_review (reviewId,memberId,shopId,reviewStar,room,location,service,health,
+                      facilities,content,creatTime,likes,reply)
+                      values('166993891','785458540','2564851','5','4','4','4','-1','-1','好好好好好技术处女座机费送油门线索性◐▂◐哦路子在长沙的红包雨再给我过来看看咯咯咯嘛，与偷摸图着用罗芳路边石峰图库聚聚会到图库聚聚会不可开交接了考虑考虑的理由吗的旅途经验巨头快乐多注意推荐旅途经验卡太乱了没抢到的理由是幻觉觉觉觉二把车在那里去接的是幻觉觉了个电话咯咯嘛，','2015-08-04 00:00:00','-1','-1')
+INSERT INTO hotel_review (reviewId,memberId,shopId,reviewStar,room,location,service,health,
+                      facilities,content,creatTime,likes,reply)
+                      values('166993726','804805917','2564851','5','4','4','4','-1','-1','各种好，希望可以再继续加油，越做越好，？。加油，相信质量决定成败，交通也很便利，。 房间也很好，首选啊，就是价格有点贵，但是质量很好，当然要给绝对的好评了，嘿嘿，加油啊！！！！！！！！！！！！！！！！！！','2015-08-04 00:00:00','-1','-1')
+INSERT INTO hotel_review (reviewId,memberId,shopId,reviewStar,room,location,service,health,
+                      facilities,content,creatTime,likes,reply)
+                      values('166992393','806056824','2564851','5','4','4','4','-1','-1','啥时间福建省怪盗基德火车上布娃娃还会不会蛇口港打卡好多啦毫无人偶爱过的就你下班差距大喊大叫说的话打瞌睡打瞌睡快递爱河一夜情哦是噶渴望我们的！婚纱肯定会打瞌睡当回事咖啡还是个死人高帅富合适的好的吧回电话卡关系好才下班很喜欢问问你们的哦了吗啊u','2015-08-04 00:00:00','-1','-1')
+INSERT INTO hotel_review (reviewId,memberId,shopId,reviewStar,room,location,service,health,
+                      facilities,content,creatTime,likes,reply)
+                      values('166991831','111747084','2564851','5','4','4','4','-1','-1','烫头发刚刚给刚刚给光棍节收拾你无数次苏丰盛南方i内蒙古；iv莫斯i是v你是谁你说呢吵到你烦死你福。sbusbsusucusudndsnsn$fusubudbcsusf@sfusudfisbis$idID地i个','2015-08-04 00:00:00','-1','-1')
+INSERT INTO hotel_review (reviewId,memberId,shopId,reviewStar,room,location,service,health,
+                      facilities,content,creatTime,likes,reply)
+                      values('166991649','155407844','2564851','5','4','4','4','-1','-1','看上去很舒服，很想长住。一进入的时候非常的华丽，实在是太舒服了，这里真的是一个很好的选择，服务人员态度友好，又得体。真的很满意这里的酒店，这次只是出来玩几天，太可惜了，还不舍得走呢。下次我一定会回来的。','2015-08-04 00:00:00','-1','-1')
+INSERT INTO hotel_review (reviewId,memberId,shopId,reviewStar,room,location,service,health,
+                      facilities,content,creatTime,likes,reply)
+                      values('166991161','132420197','2564851','5','4','4','4','-1','-1','交通便利。去哪里都很方便。环境也非常好。空气清新。绿树环绕。让人每天都心情愉悦的出去每一天的旅行。入住环境就更不用说了。温馨温暖干净整洁清爽。总归是让人有回家的感觉。酒店餐厅好吃的也很多。来这里的每个人都会有很舒心的感受。','2015-08-04 00:00:00','-1','-1')
+INSERT INTO hotel_review (reviewId,memberId,shopId,reviewStar,room,location,service,health,
+                      facilities,content,creatTime,likes,reply)
+                      values('166991007','808936629','2564851','5','4','4','4','-1','-1','酒店交通便利！！！！而且服务态度特别好！！！最好的是各种设施特别好！！！环境优美干净，最重要的是床木有一点酒店的感觉，就像是给我们去玩的人一个新的家的感觉，所以我们就应该选择这家酒店，让我们一起享受高质量服务！','2015-08-04 00:00:00','-1','-1')
+INSERT INTO hotel_review (reviewId,memberId,shopId,reviewStar,room,location,service,health,
+                      facilities,content,creatTime,likes,reply)
+                      values('166990684','774991401','2564851','5','4','4','4','-1','-1','价格虽然贵了点，但到迪斯尼交通方便，服务一流，环境优美，值得去体验。由此酒店到巿中心可乘坐各种交通工具，也可以从这里到机场。关于香港旅游有任何问题，可咨询该酒店的工作人员，你一定能得到满意的答复。值得推荐。','2015-08-04 00:00:00','-1','-1')
+INSERT INTO hotel_review (reviewId,memberId,shopId,reviewStar,room,location,service,health,
+                      facilities,content,creatTime,likes,reply)
+                      values('166990659','134800510','2564851','5','4','4','4','-1','-1','不错的、去旅游时住过、环境很好、客服也很好、住了几天！很舒服、希望下次有机会再来噢！','2015-08-04 00:00:00','-1','-1')
+INSERT INTO hotel_review (reviewId,memberId,shopId,reviewStar,room,location,service,health,
+                      facilities,content,creatTime,likes,reply)
+                      values('166990642','805940153','2564851','5','4','4','4','-1','-1','挺好的，赞一个！下次还会去的，这次是跟我朋友一起去的！哈哈！！！这个名字那么大气，一去才发现还不错了，哈哈，很不错了了了！推荐我朋友一起去啊！谢谢各位朋友的推荐！aaaaaaaaa好开心的一天，谢谢了','2015-08-04 00:00:00','-1','-1')
+INSERT INTO hotel_review (reviewId,memberId,shopId,reviewStar,room,location,service,health,
+                      facilities,content,creatTime,likes,reply)
+                      values('166990536','124269696','2564851','5','4','4','4','-1','-1','酒店交通非常方便，出了酒店门不用走多远很快就能有车，而且服务台可以帮忙叫车，早餐也很棒，种类很多，吃完后也会及时补上，味道也很棒。房间里面收拾的很干净，没有不愉快的味道，我们有次弄的特别乱服务员也给收拾的很好','2015-08-04 00:00:00','-1','-1')
+INSERT INTO hotel_review (reviewId,memberId,shopId,reviewStar,room,location,service,health,
+                      facilities,content,creatTime,likes,reply)
+                      values('166990478','790163284','2564851','4','0','0','0','-1','-1','迪士尼好莱坞酒店，是个人人都向往的地方!高端大气上档次，如果以后，等我有了钱或者是等我退了休，总之，只要以后有时间的话。我一定和我的家人，到此地方来享受一下这个高大上的感觉!此生一定到此地方潇洒走一回，也不忘这一生!','2015-08-04 00:00:00','-1','-1')
+INSERT INTO hotel_review (reviewId,memberId,shopId,reviewStar,room,location,service,health,
+                      facilities,content,creatTime,likes,reply)
+                      values('166990043','810078471','2564851','5','4','4','4','-1','-1','酒店很豪华，也很漂亮，居住环境非常好，周边环境也很好，空气也非常棒，高端大气上档次，非常不错，价格虽然较高，却也十分合理，酒店服务也相当不错，让人宾至如归，是一家非常棒，也非常美丽的酒店，非常满意和喜欢。','2015-08-04 00:00:00','-1','-1')
+shopId 2564851 已循环到已经爬过内容
+shopId 2564851 complete to pageno=1381
+
+爬取的是pageno=1381，
+(1062, u"Duplicate entry '166995768' for key 'PRIMARY'")
+此reviewId是1382页上的内容，数据库的操作有问题？
