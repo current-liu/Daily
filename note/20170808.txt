@@ -1,0 +1,9 @@
+##get_text( )函数如何只获取当前标签的值，而不获取子标签的值
+	a, b = tag.stripped_strings
+	l = list(tag.stripped_strings)
+
+<type 'list'>: [u'\u8425\u4e1a\u65f6\u95f4\uff1a', u'\u5468\u4e94,\u5468\u516d\n07:00-01:00\n\n\u5468\u4e00\u81f3\u5468\u56db,\u5468\u65e5\n07:00-24:00', u'\u4fee\u6539']
+
+u'别       名：'
+u'商户简介：'
+u'营业时间：'
