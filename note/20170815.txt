@@ -1,0 +1,28 @@
+
+##sql里面有一个奇怪的地方，FROM后面的占位符不能加引号，加了之后评出来的sql里该位置会有两层引号
+	def select_shopid(table):
+    results = []
+
+    try:
+        sql = """SELECT shopId
+                        FROM %s WHERE shopName = '-1' OR shopName IS NULL """ % table
+        cursor.execute(sql)
+        results = cursor.fetchall()
+
+    except BaseException, e:
+        print e
+
+    return results
+
+##数据库报错：1292, u"Truncated incorrect DOUBLE value
+
+该用数值的地方，用了其他类型的值
+
+
+##能否直接获取request返回结果的状态值
+	马蜂窝的403，返回的doc为空，之前的判断里没有这种情况
+
+##评论的更新
+马蜂窝的评论无法按照时间排序，后续的更新是个问题
+
+##将运行日志写到文件夹里，避免目录的混乱
