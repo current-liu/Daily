@@ -1,0 +1,4 @@
+## pycharm unable to resolve table
+Settings > Languages & Frameworks > SQL Resolution Scopes 
+
+## 将crawling_room的查询写成脚本放在了“启动”文件夹里
