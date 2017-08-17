@@ -1,0 +1,12 @@
+## 注意缩进
+定义一个变量时，不小心多了一个缩进，导致后面引用时出错
+
+## 打mark时机的选择
+	第一直觉：没查一条就打一个mark，考虑到这样效率太低，直接pass。
+	2.0：在程序里维护一个set，把查过的member_id存起来，存够100个统一打一次。
+	3.0：每次去hotel_review表里查member_id之前，先查member表里有的member_id，在hotel_review表中给member_id在此范围里的记录打上mark。(当前方案）
+	4.0：直接在查询语句中加筛选条件。
+
+## mysql server has gone away 的处理
+	当数据库无法使用时，应及时停止程序，以避免浪费。
+	MySQL server has gone away
