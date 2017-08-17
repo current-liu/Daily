@@ -10,3 +10,8 @@
 ## mysql server has gone away 的处理
 	当数据库无法使用时，应及时停止程序，以避免浪费。
 	MySQL server has gone away
+## 命令行执行python模块时提示包找不到的问题
+	http://blog.csdn.net/crylearner/article/details/25430621
+
+python中包和文件夹的差别 
+要把需导入包所在文件夹添加到系统的搜索路径中
