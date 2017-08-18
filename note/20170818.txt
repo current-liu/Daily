@@ -1,0 +1,13 @@
+## 马蜂窝酒店房间信息爬取
+697个酒店，每个酒店5个请求，昨天,今天各爬取了一遍，每次代理花费3块多，尚可。
+
+##cmd窗口汉字显示乱码
+	http://blog.csdn.net/quzhongxin/article/details/45336333
+1. win+R 输入regedit 进入注册表 
+2. 找到 HKEY_CURRENT_USER\Console\%SystemRoot%_system32_cmd.exe 如果 该项下已存在CodePage项，则把值改为十进制”65001”；如果不存在，在该项下新建一个 DWORD（32位值），命名为“CodePage”，值设为“65001” 
+3. 重启cmd后生效 
+
+http://www.mafengwo.cn/ajax/router.php?cb=jQuery18109768219088779657_1503019977250&sAct=KMdd_StructWebAjax|GetPoisByTag&iMddid=10189&iTagId=0&iPage=4
+
+
+cursor.execute(sql, data_tuple)
