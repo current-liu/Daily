@@ -1,0 +1,5 @@
+### 把request下载的源码doc保存在本地，再进行json.loads（）会报错，因为在做doc=""时，进行了一次转换，应该doc=R""
+
+
+## attraction_review 抓取到shopId=520，293页
+
