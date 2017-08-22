@@ -1,0 +1,5 @@
+## food_shop_list 获取完毕，共8057家店
+
+## attraction_review 获取完毕，共64536条评论
+
+## shopping_shop_list 获取完毕，共344家店
