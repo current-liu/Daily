@@ -1,0 +1,17 @@
+#MongoDB
+## 文档
+	文档：多个键及其关联的值有序地放置在一起。类似于关系型数据库中的行
+		键值对是有序的、区分类型和大小写、键不能充重复
+## 集合
+	集合：一组文档。如同关系型数据库中的表
+		集合是无模式的，一个集合里面的文档可以是各种各样的。
+
+
+##shopping_review total:17221
+
+
+## MySql 差集
+	SELECT DISTINCT food_review.memberId FROM food_review LEFT JOIN member ON food_review.memberId = member.memberId WHERE member.memberId IS NULL;
+如下语句也可以实现，但效率太低，数据量大时还会查询失败
+
+	SELECT DISTINCT memberId FROM food_review WHERE memberId NOT IN (SELECT memberId FROM member);
