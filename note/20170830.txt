@@ -1,0 +1,10 @@
+##Customize the admin change list
+Now’s also a good time to note that change lists give you free pagination. The default is to display 100 items per page. Change list pagination, search boxes, filters, date-hierarchies, and column-header-ordering all work together like you think they should.
+
+	https://docs.djangoproject.com/en/1.11/intro/tutorial07/
+
+##Where are the Django source files?
+
+If you have difficulty finding where the Django source files are located on your system, run the following command:
+
+$ python -c "import django; print(django.__path__)"

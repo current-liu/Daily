@@ -1,0 +1,7 @@
+##type object "DictAdmin" has no attribute _meta
+
+	多写一层括号，汗汗汗
+
+## post方式不同于get方式可以被django直接得到
+
+		http://www.cnblogs.com/dasydong/p/4427806.html
