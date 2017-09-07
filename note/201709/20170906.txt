@@ -1,0 +1,2 @@
+##Pycharm+Django+Debug
+Debug模式只能用127.0.0.1

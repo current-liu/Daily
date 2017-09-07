@@ -1,0 +1,3 @@
+## pietty 中文乱码
+Option》Encoding》unicode-UTF-8
+Translation Recevied data assumed to be in which character set》UTF-8
