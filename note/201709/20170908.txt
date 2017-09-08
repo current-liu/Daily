@@ -1,0 +1,11 @@
+## convert_tz returns null
+
+	https://stackoverflow.com/questions/14454304/convert-tz-returns-null
+
+
+[{"model": "manager.spider", "pk": 5}, {"model": "manager.spider", "pk": 1}]
+
+
+[{"month":{"model": "manager.spider", "pk": 5}, 
+{"model":"manager.spider", "pk": 1}},
+{"month1":{"model": "manager.spider", "pk": 5}, {"model": "manager.spider", "pk": 1}}]
