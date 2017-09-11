@@ -1,0 +1,15 @@
+## convert_tz returns null
+先把时区设置关了 
+
+	http://ju.outofmemory.cn/entry/80344
+
+	如果不需要在程序中特别处理时区（timezone-aware），在Django项目的settings.py文件中，可以直接设置为“USE_TZ = False”就省心了
+
+
+## Json
+    # res = SpiderStatus.objects.filter(edit_time__year=year).annotate(month=TruncMonth('edit_time')).values(
+    #     'month').annotate(num=Count('id')).values('num', 'month').order_by('month')
+    #
+    # spider_json = json.dumps(list(res), cls=DjangoJSONEncoder)
+    # return JsonResponse(spider_json, safe=False)
+    #return HttpResponse(spider_json, content_type="application/json")
