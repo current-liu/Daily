@@ -1,0 +1,9 @@
+查询中经常遇到这种查询，分组后取每组第一条。分享下一个SQL语句：
+--根据 x 分组后、根据 y 排序后取第一条
+select * from (
+ select ROW_NUMBER() over(partition by x order by y desc) RowNum
+   ,testTable.*
+   from testTable) as t1  where RowNum = 1
+
+##spider_manager.manager.service.get_spider_on_day_every_hour
+	django的filter方法，按日期筛选后，再按hour筛选，会出错，待查明具体原因。
