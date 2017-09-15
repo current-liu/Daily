@@ -1,0 +1,6 @@
+## ValueError: unsupported format character 'Y' (0x59) 
+	%%Y-%%m-%%d
+
+##Ajax同步
+
+## 多线程

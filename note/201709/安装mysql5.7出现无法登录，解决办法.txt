@@ -1,0 +1,26 @@
+#1.停止mysql数据库
+/etc/init.d/mysqld stop
+ 
+#2.执行如下命令
+mysqld_safe --user=mysql --skip-grant-tables --skip-networking &
+ 
+#3.使用root登录mysql数据库
+mysql -u root mysql
+ 
+#4.更新root密码
+mysql> UPDATE user SET Password=PASSWORD('newpassword') where USER='root';
+#最新版MySQL请采用如下SQL：
+mysql> UPDATE user SET authentication_string=PASSWORD('newpassword') where USER='root';
+ 
+#5.刷新权限 
+mysql> FLUSH PRIVILEGES;
+ 
+#6.退出mysql
+mysql> quit
+ 
+#7.重启mysql
+/etc/init.d/mysqld restart
+ 
+#8.使用root用户重新登录mysql
+mysql -uroot -p 
+Enter password: <输入新设的密码newpassword>
