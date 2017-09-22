@@ -1,3 +1,8 @@
+
 如何创建.gitignore文件，忽略不必要提交的文件,比如.pyc
 
 	https://zhidao.baidu.com/question/2053485325521871027.html 
+
+##mod_wsgi
+	http://download.csdn.net/download/copter/9192361
+
