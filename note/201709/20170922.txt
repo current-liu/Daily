@@ -1,0 +1,3 @@
+##Windows下Apache+Django+mod_wsgi的static和media问题处理
+
+	http://www.cnblogs.com/roronoa-sqd/p/5403019.html

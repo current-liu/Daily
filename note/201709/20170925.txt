@@ -1,0 +1,23 @@
+## 在CentOS 7上通过Apache和mod_wsgi运行Django应用
+	http://blog.csdn.net/zstack_org/article/details/53688924
+
+##简单封装DBUtils 和 pymysql 并实现简单的逆向工程生成class 类的py文件
+	http://www.cnblogs.com/rcddup/archive/2017/05/20/6881944.html
+
+python学习---3（DBUtils.PooledDB）
+	http://blog.csdn.net/amandaxy/article/details/7327981
+##centos
+	cd ../
+	cd usr
+	cd Django
+	source Djangoenv/bin/activate
+	
+	出现 (Djangoenv) [root@linux-node2 Django]#
+	
+	cd cafedecoralcn
+	python manage.py runserver 0.0.0.0:8000
+	
+	
+	sudo fuser -k 8000/tcp
+
+
