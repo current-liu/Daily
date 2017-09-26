@@ -10,6 +10,8 @@ python学习---3（DBUtils.PooledDB）
 	cd ../
 	cd usr
 	cd Django
+
+	cd ../usr/Django
 	source Djangoenv/bin/activate
 	
 	出现 (Djangoenv) [root@linux-node2 Django]#
@@ -19,5 +21,11 @@ python学习---3（DBUtils.PooledDB）
 	
 	
 	sudo fuser -k 8000/tcp
+	lsof -i tcp:8000
+	kill -9 pid
+
+	sudo systemctl start httpd
+	systemctl status httpd.service -l
+
 
 
