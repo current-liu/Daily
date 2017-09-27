@@ -1,0 +1,7 @@
+##apache CentOS Permission denied: AH00072
+
+	http://blog.csdn.net/aries223/article/details/70837728
+
+	修改配置文件
+	vim /etc/selinux/config
+	SELINUX=enforcing 改成--> SELINUX=disabled

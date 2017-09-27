@@ -1,3 +1,9 @@
+##Apache部署django项目
+	http://www.cnblogs.com/fnng/p/4119712.html
+
+
+##通过Nginx部署Django（基于ubuntu)
+	http://www.cnblogs.com/fnng/p/5268633.html
 ## 在CentOS 7上通过Apache和mod_wsgi运行Django应用
 	http://blog.csdn.net/zstack_org/article/details/53688924
 
@@ -27,5 +33,19 @@ python学习---3（DBUtils.PooledDB）
 	sudo systemctl start httpd
 	systemctl status httpd.service -l
 
+##Centos下 Nginx安装与配置
+	http://www.jianshu.com/p/d5114a2a2052
 
 
+	/usr/local/nginx/sbin/nginx
+	/usr/local/nginx/sbin/nginx –s reload
+	/usr/local/nginx/sbin/nginx –s stop
+	/usr/local/nginx/sbin/nginx –t
+	pkill nginx
+
+http://uwsgi-docs.readthedocs.io/en/latest/tutorials/Django_and_nginx.html
+
+	cd ../usr/uwsgi-tutorial
+	source bin/activate
+	cd cafedecoralcn
+	uwsgi --http :8000 --module cafedecoralcn.wsgi
