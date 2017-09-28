@@ -1,0 +1,1 @@
+在/etc新建了/nginx/conf.d文件夹
