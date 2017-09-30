@@ -1,0 +1,9 @@
+[error] 20643#0: *28 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 113.139.189.143, server: linux-node2, request: "GET /cafe HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "202.110.49.146:8000"
+2017/09/29 17:43:12 [error] 20643#0: *30 connect() failed (111: Connection refused) while connecting to upstream, client: 113.139.189.143, server: linux-node2, request: "GET /cafe HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "202.110.49.146:8000"
+2017/09/29 17:43:14 [error] 20643#0: *30 connect() failed (111: Connection refused) while connecting to upstream, client: 113.139.189.143, server: linux-node2, request: "GET /cafe HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "202.110.49.146:8000"
+2017/09/29 17:43:24 [error] 20643#0: *33 connect() failed (111: Connection refused) while connecting to upstream, client: 113.139.189.143, server: linux-node2, request: "GET /cafe HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "202.110.49.146:8000"
+2017/09/29 17:44:11 [error] 20643#0: *36 connect() failed (111: Connection refused) while connecting to upstream, client: 113.139.189.143, server: linux-node2, request: "GET /cafe HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "202.110.49.146:8000"
+2017/09/29 17:44:29 [error] 20643#0: *40 connect() failed (111: Connection refused) while connecting to upstream, client: 113.139.189.143, server: linux-node2, request: "GET /cafe HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "202.110.49.146:8000"
+
+
+用:8001 启动是 time out 

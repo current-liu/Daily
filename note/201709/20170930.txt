@@ -1,0 +1,5 @@
+uwsgi --socket 127.0.0.1:8001 --module cafedecoralcn.wsgi --master --processes 4 --threads 2
+
+让wsgi在8001端口等待nginx转发过来的请求
+
+

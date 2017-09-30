@@ -1,5 +1,7 @@
 ##以uwsgi启动项目
 http://uwsgi-docs.readthedocs.io/en/latest/tutorials/Django_and_nginx.html
+##uwsgi初始配置问题
+https://segmentfault.com/q/1010000002523354/a-1020000002526934
 
 	cd ../usr/uwsgi-tutorial
 	source bin/activate
@@ -24,9 +26,11 @@ http://uwsgi-docs.readthedocs.io/en/latest/tutorials/Django_and_nginx.html
 ###应该是文件的权限问题：
 	1、local、nginx、html三个文件夹的权限都是755，usr的权限为710，尝试将usr的权限也改为755，仍然报同样的错误；
 	2、修改配置文件 /etc/ selinux/config，将SELINUX=enforcing改为SELINUX=disabled，没有效果；
+	
+	将配置文件里的用户改为user，解决了权限问题
 
 ##Nginx配置文件（nginx.conf）配置详解
 	http://blog.csdn.net/tjcyjd/article/details/50695922
 
 ##nginx配置文件：
-教程上说nginx的配置文件在/etc/nginx/或者/usr/local/etc/nginx/下，但系统里没有这两个文件夹；我自己在/usr/local/etc/下新建了一个nginx文件夹，不知道是否有作用
+教程上说nginx的配置文件在/etc/nginx/或者/usr/local/etc/nginx/下，但系统里没有这两个文件夹；我自己在/usr/local/etc/下新建了一个nginx文件夹，在/etc新建了/nginx/conf.d文件夹不知道是否有作用

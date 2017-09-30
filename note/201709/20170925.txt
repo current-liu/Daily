@@ -49,5 +49,8 @@ http://uwsgi-docs.readthedocs.io/en/latest/tutorials/Django_and_nginx.html
 	source bin/activate
 	cd cafedecoralcn
 	uwsgi --http :8000 --module cafedecoralcn.wsgi --master --processes 4 --threads 2
+	uwsgi --socket 127.0.0.1:8001 --module cafedecoralcn.wsgi --master --processes 4 --threads 2
 
 	uwsgi cafedecoralcn.ini
+
+	10.10.5.155
