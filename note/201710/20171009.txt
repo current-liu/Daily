@@ -1,0 +1,10 @@
+##Django
+
+1.Creating a project
+	$ django-admin startproject mysite
+2.To create your app, make sure you’re in the same directory as manage.py 
+  and type this command:
+	$ python manage.py startapp polls
+3.Creating models
+	$ python manage.py migrate
+	python manage.py makemigrations polls
