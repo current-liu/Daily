@@ -1,0 +1,20 @@
+##MySQL 从一个表中查数据，插入另一个表
+###1.如果2张表的字段一致，并且希望插入全部数据，可以用这种方法：
+ 
+     INSERT INTO 目标表 SELECT * FROM 来源表;
+ 
+	例如： insert into t_a  select * from t_b ;
+ 
+###2.如果只希望导入指定字段，可以用这种方法：
+ 
+	INSERT INTO 目标表 (字段1, 字段2, ...) SELECT 字段1, 字段2, ... FROM 来源表;(相对应字段的类型必须保持一致)
+ 
+	例如：insert into t_a  ( name, age ) select name, age from t_b where age > 10;
+ 
+###3.如果您需要只导入目标表中不存在的记录，可以使用这种方法：
+	INSERT INTO 目标（字段1，字段2.....） SELECT 字段1，字段2...... FROM 来源表 WHERE NOT EXISTS ( SELECT * FROM 目标表 WHERE 目标表.字段 = 来源表.字段);
+ 
+	例如：insert into t_a (name) select name from t_b where not exists (select *  from t_a where t_a.name = t_b.name);
+
+##常用正则表达式大全
+	http://www.cnblogs.com/zxin/archive/2013/01/26/2877765.html

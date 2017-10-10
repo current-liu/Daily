@@ -54,3 +54,8 @@ http://uwsgi-docs.readthedocs.io/en/latest/tutorials/Django_and_nginx.html
 	uwsgi cafedecoralcn.ini
 
 	10.10.5.155
+
+
+rm -rf /home/test
+
+f是不提示用户，直接删除目录下的所有文件。
