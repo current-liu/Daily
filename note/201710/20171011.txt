@@ -1,1 +1,50 @@
-nihao
+##Input/output error 
+202.110.49.146上的大家乐服务端报的错，定位在reviews/service的173行
+重启uwsgi后好了
+IOError at /reviews/get_or_review/
+[Errno 5] Input/output error
+Request Method:	GET
+Request URL:	http://202.110.49.146:8000/reviews/get_or_review/?id=6
+Django Version:	1.11.5
+Exception Type:	IOError
+Exception Value:	
+[Errno 5] Input/output error
+Exception Location:	./reviews/service.py in get_or_review, line 172
+Python Executable:	/usr/uwsgi-tutorial/bin/uwsgi
+Python Version:	2.7.5
+Python Path:	
+['.',
+ '',
+ '/usr/uwsgi-tutorial/lib64/python27.zip',
+ '/usr/uwsgi-tutorial/lib64/python2.7',
+ '/usr/uwsgi-tutorial/lib64/python2.7/plat-linux2',
+ '/usr/uwsgi-tutorial/lib64/python2.7/lib-tk',
+ '/usr/uwsgi-tutorial/lib64/python2.7/lib-old',
+ '/usr/uwsgi-tutorial/lib64/python2.7/lib-dynload',
+ '/usr/lib64/python2.7',
+ '/usr/lib/python2.7',
+ '/usr/uwsgi-tutorial/lib/python2.7/site-packages']
+Server time:	Wed, 11 Oct 2017 16:24:25 +0800
+Traceback Switch to copy-and-paste view
+
+/usr/uwsgi-tutorial/lib/python2.7/site-packages/django/core/handlers/exception.py in inner
+            response = get_response(request) ...
+▶ Local vars
+/usr/uwsgi-tutorial/lib/python2.7/site-packages/django/core/handlers/base.py in _get_response
+                response = self.process_exception_by_middleware(e, request) ...
+▶ Local vars
+/usr/uwsgi-tutorial/lib/python2.7/site-packages/django/core/handlers/base.py in _get_response
+                response = wrapped_callback(request, *callback_args, **callback_kwargs) ...
+▶ Local vars
+./reviews/service.py in get_or_review
+        print sort_dict ...
+▶ Local vars
+
+
+##done 的配置，貌似会自动找到index.html文件
+location /cafe {
+            alias /usr/uwsgi-tutorial/cafedecoralcn/web/6.1; # your Django project's static files - amend as required
+            autoindex  on;
+            autoindex_exact_size off;
+            autoindex_localtime on; 
+        }
