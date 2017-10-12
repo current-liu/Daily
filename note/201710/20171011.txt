@@ -1,6 +1,7 @@
 ##Input/output error 
-202.110.49.146上的大家乐服务端报的错，定位在reviews/service的173行
-重启uwsgi后好了
+“大家乐”项目后端在202.110.49.146上运行一段时间后，/reviews/get_or_review，/reviews/get_dp_review，/reviews/get_ta_review 会报一个IOError at /reviews/get_or_review/
+[Errno 5] Input/output error的错误，且只出现在返回数据较多的请求里（依shop_id的不同），Traceback里的信息定位在定位在reviews/service的173行的print语句，/reviews/get_mfw_review正常；重启uwsgi后可恢复正常，错误原因不明，可能是缓存不够。已将对应的print语句删除，待继续测试。
+
 IOError at /reviews/get_or_review/
 [Errno 5] Input/output error
 Request Method:	GET
