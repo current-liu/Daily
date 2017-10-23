@@ -1,0 +1,18 @@
+##机器学习之深入理解K-means、与KNN算法区别及其代码实现
+http://blog.csdn.net/sinat_35512245/article/details/55051306
+
+D:\app\liuchao\product\11.1.0\client_1\bin;
+C:\Program Files\Java\jdk1.7.0_80\bin;
+C:\oraclexe\app\oracle\product\11.2.0\server\bin;
+C:\ProgramData\Oracle\Java\javapath;
+C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;
+%SystemRoot%\system32;
+%SystemRoot%;%SystemRoot%\System32\Wbem;
+%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;
+%MAVEN_HOME%\bin;
+%CATALINA_HOME%\lib;
+%CATALINA_HOME%\bin;
+C:\Program Files\Calibre2\;
+C:\Program Files\Python27;
+D:\tool\Git\cmd;
+C:\Program Files\Python27\Scripts

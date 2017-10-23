@@ -1,1 +1,10 @@
 install VM Ubantu and so on
+
+windows连接虚拟机linux下mysql配置
+	http://yhhazr.iteye.com/blog/1456482
+	http://blog.sina.com.cn/s/blog_684355870100kspz.html
+	https://jingyan.baidu.com/article/9c69d48ffd952713c9024e83.html
+	http://www.111cn.net/database/mysql/42040.htm
+
+Ubantu MySQL数据库操作
+	http://www.cnblogs.com/DswCnblog/p/5620847.html
