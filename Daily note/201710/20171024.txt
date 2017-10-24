@@ -1,0 +1,11 @@
+dpkg: unrecoverable fatal error, aborting:
+ fork failed: Cannot allocate memory
+E: Sub-process /usr/bin/dpkg returned an error code (2)
+
+liuchao@ubantu:~$ sudo apt install python-pip
+E:dpkg was interruputed, you must manually run 'sudo dpkg --configure -a' to correct the probolem
+
+apt & apt-get ?
+
+为VMware虚拟机内安装的Ubuntu 16.04设置静态IP地址
+http://blog.csdn.net/liumiao1128/article/details/52449683
