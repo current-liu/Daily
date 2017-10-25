@@ -6,6 +6,9 @@ liuchao@ubantu:~$ sudo apt install python-pip
 E:dpkg was interruputed, you must manually run 'sudo dpkg --configure -a' to correct the probolem
 
 apt & apt-get ?
+apt是友好版的apt-get，最大特性就是有进度条了。
 
 为VMware虚拟机内安装的Ubuntu 16.04设置静态IP地址
 http://blog.csdn.net/liumiao1128/article/details/52449683
+DNS servers also need to set 
+http://blog.csdn.net/wolf_soul/article/details/46409323
