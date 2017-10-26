@@ -1,0 +1,28 @@
+##EnvironmentError: mysql_config not found
+	http://blog.csdn.net/mldxs/article/details/23946129
+	网上有人解释说使用apt-get安装的MySQL是没有mysql_config这个文件的
+	
+	解决办法：
+	
+	（1）ubuntu下
+	
+	执行sudo apt-get install libmysqld-dev
+
+##需求文件requirements.txt的创建及使用
+	http://blog.csdn.net/loyachen/article/details/52028825
+	pip freeze >requirements.txt
+
+
+##使用Fabric部署网站应用
+	Fabric是一个用Python开发的部署工具，最大特点是不用登录
+	远程服务器，在本地运行远程命令，几行Python脚本就可以轻松部署。
+	also see Ansible
+	http://www.ansible.com.cn/docs/intro_getting_started.html#gs-about
+
+	virtualenv zc.buildout
+	pip easy_install & setuptools
+##Pandas学习（一）——数据的导入
+	http://blog.csdn.net/hjxzb/article/details/70677483
+
+##Python数据处理：Pandas模块的 12 种实用技巧
+	http://python.jobbole.com/85742/?utm_source=blog.jobbole.com&utm_medium=relatedPosts
