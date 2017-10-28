@@ -1,0 +1,28 @@
+## 设置Ubuntu下Pycharm的快捷启动方式
+	sudo gedit /usr/share/applications/Pycharm.desktop  
+
+	[Desktop Entry]
+	Type=Application
+	Name=Pycharm
+	GenericName=Pycharm
+	Comment=Pycharm:The Python IDE
+	Exec="/home/liuchao/Programs/pycharm-2017.2.3/bin/pycharm.sh" %f
+	Icon=/home/liuchao/Programs/pycharm-2017.2.3/bin/pycharm.png
+	Terminal=pycharm
+	Categories=Pycharm;
+
+## pycharm 字体
+	color scheme 》color scheme font
+
+sudo gedit /usr/share/applications/Navicat.desktop
+
+##pycharm git 管理的地址
+	pycharm>settings>Version>Control
+
+##WinZip v20.0
+	用户名:
+	China
+	注册码:
+	HYNDX-FL0Z5-AAR5D-GC717-TDUHG-UFU88
+##PyCharm设置Ipython交互环境和宏快捷键
+	http://blog.csdn.net/jsyzliuyu/article/details/55211019
