@@ -1,0 +1,61 @@
+##JSON对象长度和遍历方法
+	http://caibaojian.com/json-length.html
+著作权归作者所有。
+商业转载请联系作者获得授权,非商业转载请注明出处。
+链接:http://caibaojian.com/json-length.html
+来源:http://caibaojian.com
+
+JSON数组有长度json.abc.length,如果单纯是json格式，那么不能直接使用json.length方式获取长度，而应该使用其他方法。
+
+最近在修改一个HTML页面的JS的时候遍历JSON对象，却怎么也调试不通过。怪这个HTML网页不知道用了什么方法禁止了js错误提示，刚开始的时候不知道有这个问题，用chrome的开发人员工具都没发现错误，就是在获取 json.length的时候总是undefined，所以就以为自己定义的json方法不对。折腾了一个晚上一点进展都没有，头都整晕了，太晚，最后失望地洗洗睡了。
+
+第二天晚上就是不甘心这个小问题能难倒我，于是静下心来仔细查原因。自己新建一个空的HTML文件在其中测试，发现JSON对象根本没有length属性，在搜索引擎查找也没有比较权威的参考文档提到json有这个属性。博客也很少有提到 json.length 的。但是奇怪的是我明明记得json有length，我还用过，程序没错，正确运行。
+
+那是怎么回事呢？最后看某博客一篇文章的时候回想起以前编程的细节，记得以前的json的子对象是个数组而这次的不是，这下终于恍然大悟了。
+
+以前我使用json的这样的结构：
+
+var json1={"abc":[{"name":"txt1"},{"name","txt2"}]};
+遍历的方法是：
+
+for(var i=0;i<json1.abc.length;i++){alert(json1.abc[i].name);}
+这里的json1.abc是一个数组，数组是由2个子json组成的，
+###数组是有length属性的，所以说能工作。
+
+而我这一次的json是这样的：
+
+var json2={"name":"txt1","name2":"txt2"};
+而json本身没有length属性，所以用length属性自然会出错：
+
+for(var i=0;i<json2.length;i++){alert(json2[i].text);}
+那么要遍历这样的json怎么办呢？这样做：
+
+for(var js2 in json2){
+
+alert( js2+"="+json2[js2]);
+
+}
+既然json没有length属性，如果要知道他的长度怎么办呢？很简单，把上面的遍历改一下就是了：
+
+var jslength=0;
+
+for(var js2 in json2){
+
+jslength++;
+
+}
+把这段代码写成一个方法，以后调用就行了：
+
+function getJsonLength(jsonData){
+
+var jsonLength = 0;
+
+for(var item in jsonData){
+
+jsonLength++;
+
+}
+
+return jsonLength;
+
+}
