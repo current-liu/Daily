@@ -1,0 +1,15 @@
+##RabbitMQ
+	http://blog.csdn.net/drcwr/article/details/50846134
+	rabbitmqctl  add_user test 123456
+	rabbitmqctl list_users
+	rabbitmqctl add_vhost test_host
+	rabbitmqctl set_permissions -p test_host  test ".*" ".*" ".*"
+	
+	service rabbitmq-server start
+##ssdb
+	/usr/local/ssdb/
+	./ssdb-server ssdb.conf
+	./ssdb-cli -h 127.0.0.1 -p 8888
+	info
+
+##sudo sysv-rc-conf

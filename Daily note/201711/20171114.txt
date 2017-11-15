@@ -1,0 +1,7 @@
+##查看日志
+	
+docker exec -it ability_heavy bash
+
+tail -200 nohup.out
+tail -200 app.log
+
