@@ -1,0 +1,2 @@
+Appending source /home/liuchao/anaconda3/bin/activate to /home/liuchao/.bashrc
+A backup will be made to: /home/liuchao/.bashrc-anaconda3.bak

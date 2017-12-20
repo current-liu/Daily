@@ -1,0 +1,13 @@
+##ssdb
+	sudo su
+	cd /usr/local/ssdb/
+	./ssdb-server ssdb.conf
+	./ssdb-cli -h 127.0.0.1 -p 8888
+
+	QBT_SSDB_HOST = "192.168.1.71"
+	QBT_SSDB_PORT = 8001
+	QBT_SSDB_PASSWD = "alsjfowenssasdfpiiynnlll129sssakj"
+
+##api
+查询所有散列
+hlist 0 z -1

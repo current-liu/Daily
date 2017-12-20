@@ -1,0 +1,24 @@
+##help
+	docker --help
+	docker run --help
+
+##build
+	docker build -t registry.cn-hangzhou.aliyuncs.com/jinchongzi/beehive_jiantou_lianghua:v0.4_20171129 .
+
+	docker build -f Dockerfile_upgrade_code -t registry.cn-hangzhou.aliyuncs.com/jinchongzi/beehive_jiantou_lianghua:v0.4_20171129 .
+
+##view container
+	docker ps
+	docker ps -a
+
+##view log
+	docker logs --tail=100 beehive_lianghua_lc_0.4
+
+##remove container
+	docker rm <container>
+
+##run
+	docker run -d --name beehive_lianghua_lc_0.4 -e ENV=test --net host -p 5000:5000 registry.cn-hangzhou.aliyuncs.com/jinchongzi/beehive_jiantou_lianghua:v0.4_20171129
+
+##save
+	docker save -o beehive_lianghua_0.4_xxxx.image <image>

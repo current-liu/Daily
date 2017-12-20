@@ -1,0 +1,31 @@
+##使用python建立一个简单的web服务
+	liuchao@ubuntu:~/Downloads/guchong$ py 8999
+	http://127.0.0.1:8009/
+	页面显示当前路径下index.html的内容
+
+##修改接口地址
+	liuchao@ubuntu:~/Downloads/guchong$ cat scripts/config.js 
+	const appConfig = {
+	  api: 'http://t0.chong.so:4001/api/v1'
+	}
+	
+	改为 api: 'http://127.0.0.1:4001/api/v1'
+
+
+
+##h5的
+	liuchao@ubuntu:~/Downloads$ cat www/scripts/config.js 
+	const AppConstants = {
+	  // api: 'https://api.jinchongzi.com/h5/v1'
+	  api: 'http://t0.chong.so:4000/h5/v1'
+	}
+	
+	改为 api: 'http://127.0.0.1:4001/h5/v1'
+
+##启动beehive
+	liuchao@ubuntu:~/Documents/JinChongZi/beehive_dir/beehive$ dev
+
+
+## 进mysql
+	enm
+

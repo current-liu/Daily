@@ -1,0 +1,7 @@
+##MultiDict()的作用，json里面，两个key相同的话，会取第二个，把第一个舍弃
+		try:
+            body = request.get_json()            
+        except BadRequest:
+            body = {}
+        body.update({'bit_id': bittle_id})
+        form = AlgorithmPatchForm(MultiDict(body))

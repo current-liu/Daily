@@ -13,3 +13,7 @@
 	info
 
 ##sudo sysv-rc-conf
+
+
+##anaconda3
+	source ~/anaconda3/bin/activate ~/anaconda3

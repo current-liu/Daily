@@ -1,0 +1,83 @@
+
+git remote add origin https://git.oschina.net/liuchao1920/personalcodelibrary.git
+git branch --set-upstream-to master origin/master
+git push -u origin master
+
+git remote add origin https://git.oschina.net/liuchao1920/pythonproject.git
+git fetch origin
+git merge origin/master
+
+
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+: git pull origin master
+
+
+
+
+git remote -v
+
+# Please enter a commit message to explain why this merge is necessary. #
+1.按键盘字母 i 进入insert模式
+
+2.修改最上面那行黄色合并信息,可以不修改
+
+3.按键盘左上角"Esc"
+
+4.输入":wq",注意是冒号+wq,按回车键即可
+
+# 改为ssh
+	http://blog.csdn.net/yywan1314520/article/details/51566924
+
+##改变远程仓库地址 先删后加
+	git remote rm origin
+
+
+
+## git clone checkout
+ 远程仓库 git clone 下来，当你执行 git branch，你只会看到
+
+
+
+    * master
+    并不会看到其他分支，即便远程仓库上有其他分支，使用
+
+    git branch -va
+    可以查看本地+远程分支列表
+
+    * master                0840594 merge master and 1.0.0
+    remotes/origin/1.0.0  743012a 'update'
+    remotes/origin/2.0.0  2787838 udpate
+    remotes/origin/HEAD   -> origin/master
+    remotes/origin/master 0840594 merge master and 1.0.0
+    如果想切换到 origin/2.0.0 的分支，我们可以
+
+    git branch remotes/origin/2.0.0
+    不过结果并不如意：
+
+    * (detached from origin/2.0.0)
+    master
+    git branch 会看到上面的信息，这里还需要一步操作：
+
+    git checkout -b 2.0.0
+    -b 的意思是 base，以当前分支为 base，新建一个名叫 2.0.0 的分支，这里当然也可以使用其他的命名。此时再执行 git branch 就能看到：
+
+    $ git br
+    master
+    * 2.0.0
+    就 OK 了~
+
+##checkout
+git checkout origin/remoteName -b localName
+
+##merge
+把branch-x  merge 到当前分支
+git merge branch-x 
+

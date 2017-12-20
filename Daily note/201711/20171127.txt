@@ -1,0 +1,14 @@
+##beehive 启动
+##ssdb
+	sudo su
+	cd /usr/local/ssdb/
+	./ssdb-server ssdb.conf
+	
+## 起 virtual
+## 起 anaconda
+## inv -l
+## inv web.server
+## 用test起 
+	ENV=test inv web.server
+
+"url": "beehive"

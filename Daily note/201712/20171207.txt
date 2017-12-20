@@ -1,0 +1,2 @@
+##ubuntu 16.04下搜狗输入法不能输入中文解决
+	https://jingyan.baidu.com/article/ea24bc39f9df9fda63b33150.html

@@ -1,0 +1,2 @@
+##启用脚本配置
+source ~/.bashrc
